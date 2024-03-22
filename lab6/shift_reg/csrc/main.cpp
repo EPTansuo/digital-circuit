@@ -71,7 +71,7 @@ void verilator_sim(int argc, char**argv){
 }
 int main(int argc, char** argv) {
 
-  //nvboard_sim();
-  verilator_sim(argc,argv);
+  nvboard_sim();
+  //iverilator_sim(argc,argv);
   return 0;
 }

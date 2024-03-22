@@ -61,7 +61,7 @@ void verilator_sim(int argc, char**argv){
     for (int i = 0; i < 100; ++i) {
 
         top->btn = 0; top->eval();
-	vcd->dump(++time);
+		vcd->dump(++time);
         top->btn = 1; top->eval();
         vcd->dump(++time);
     }

@@ -1,7 +1,10 @@
-
+//如果启用nvboard仿真的话:
 //btn[0]代表时钟，为了方便nvboard，不过这里没用
 //ledr[7:0]表征寄存器的值，seg[0]代表输出
 //rst复位
+
+//如果用verilator波形输出的话：
+//观察shift_reg寄存器即可
 
 module top(
     input clk,
