@@ -10,6 +10,8 @@ BUILD_DIR = ./build
 OBJ_DIR = $(BUILD_DIR)/obj_dir
 BIN = $(BUILD_DIR)/$(TOPNAME)
 
+
+
 default: $(BIN)
 
 $(shell mkdir -p $(BUILD_DIR))
@@ -24,8 +26,7 @@ VSRCS = $(shell find $(abspath ./vsrc) -name "*.v")
 CSRCS = $(shell find $(abspath ./csrc) -name "*.c" -or -name "*.cc" -or -name "*.cpp")
 CSRCS += $(SRC_AUTO_BIND)
 
-# rules for NVBoard
-include $(NVBOARD_HOME)/scripts/nvboard.mk
+
 
 # rules for verilator
 INCFLAGS = $(addprefix -I, $(INC_PATH))
@@ -45,5 +46,8 @@ run: $(BIN)
 
 clean:
 	rm -rf $(BUILD_DIR)
+
+# rules for NVBoard
+include $(NVBOARD_HOME)/scripts/nvboard.mk
 
 .PHONY: default all clean run
