@@ -2,3 +2,6 @@
 
 
 网址: [https://nju-projectn.github.io/dlco-lecture-note/index.html](https://nju-projectn.github.io/dlco-lecture-note/index.html)
+
+
+lab7-chisel 和 lab8-chisel 并没有按照课程要求来完成,但是也实现了键盘输入和VGA显示
